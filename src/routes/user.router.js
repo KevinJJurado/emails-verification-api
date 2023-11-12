@@ -9,7 +9,7 @@ userRouter.route('/')
     .post(create);
 
 userRouter.route('/verify/:code')
-    .get(verifyJWT, verifyCode)
+    .get(verifyCode)
 
 userRouter.route('/me')
     .get(verifyJWT, getLoggedUser)
